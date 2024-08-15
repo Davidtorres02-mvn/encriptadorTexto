@@ -1,0 +1,99 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background: #f5f1f1;
+    color: #333;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Layout Styles */
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Input Section */
+.input-section, .output-section {
+    flex: 1 1 300px;
+    max-width: 45%;
+}
+
+.text-area, .mensaje {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #555;
+    resize: none;
+}
+
+.text-area::placeholder {
+    color: #643a9e;
+}
+
+.text-area:focus, .mensaje:focus {
+    outline: none;
+    border-color: #643a9e;
+}
+
+.mensaje {
+    background: white;
+    background-size: contain;
+    background-color: #f7f7f7;
+}
+
+/* Buttons */
+.botones, .output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn {
+    background-color: #3f51b5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.btn:hover {
+    background-color: #2c3e9d;
+}
+
+/* Specific Styles */
+.informacion {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin-top: 10px;
+}
